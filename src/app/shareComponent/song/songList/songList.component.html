@@ -1,0 +1,18 @@
+<div class="songs">
+  <div class="songsBar">
+    <div>
+      <i class="marginT2 material-icons">play_circle_outline</i>
+      <span>播放全部</span>
+      <span class="font09 small_color">（共60首）</span>
+    </div>
+    <div>
+      <i class="font20px material-icons">format_list_bulleted</i>
+      <span class="font09">多选</span>
+    </div>
+  </div>
+  <div (click)="setSongList()">
+    <ng-container *ngFor="let song of songList; let i=index">
+      <app-song [index]="i" [song]="song"></app-song>
+    </ng-container>
+  </div>
+</div>

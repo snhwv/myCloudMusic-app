@@ -1,0 +1,23 @@
+<div class="localMusicContainer">
+  <div class="topBar">
+    <a class="btn-floating btn-flat waves-effect" routerLink="../userRoom/dashboard">
+      <i class="material-icons">arrow_back</i>
+    </a>
+    <span class="flex">下载管理</span>
+    <a class="btn btn-floating btn-flat">
+      <i class="material-icons">swap_vert</i>
+    </a>
+    <a class="btn btn-floating btn-flat">
+      <i class="material-icons">search</i>
+    </a>
+  </div>
+  <div class="content">
+    <ul class="my_tabs">
+      <li routerLink="song" routerLinkActive="active_link" class="my_tab">单曲</li>
+      <li routerLink="radioStation" routerLinkActive="active_link" class="my_tab">电台节目</li>
+      <li routerLink="video" routerLinkActive="active_link" class="my_tab">MV</li>
+      <li routerLink="downloading" routerLinkActive="active_link" class="my_tab">下载中</li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+</div>

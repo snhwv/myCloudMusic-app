@@ -1,0 +1,7 @@
+<p class="topTitle">{{lists.title}}</p>
+<div class="list waves-effect" 
+    *ngFor="let list of lists.data; let i=index" 
+    (click)="listClicked(i)">
+        <i class="material-icons">{{list.icon}}</i>
+        <span class="title listDetail">{{list.title}}</span>
+</div>

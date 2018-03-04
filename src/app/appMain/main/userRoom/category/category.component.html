@@ -1,0 +1,17 @@
+<mz-tab [fixedTabWidth]="'true'">
+    <mz-tab-item [active]="'true'" [href]="'#sideOne'" [label]="'音乐'">
+        <div class="-width"  id="sideOne">
+            <app-categoryMusic></app-categoryMusic>
+        </div>
+    </mz-tab-item>
+    <mz-tab-item [href]="'#sideTwo'" [label]="'视频'">
+        <div class="-width" style="background:rgb(255, 145, 0);width:100vw" id="sideTwo">
+            <app-categoryVideo></app-categoryVideo>
+        </div>
+    </mz-tab-item>
+    <mz-tab-item [href]="'#sideThree'" [label]="'电台'">
+        <div class="-width" style="background:rgb(68, 0, 255);width:100vw" id="sideThree">
+            <app-categoryRadioStation></app-categoryRadioStation>
+        </div>
+    </mz-tab-item>
+</mz-tab>

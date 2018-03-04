@@ -1,0 +1,32 @@
+.userCommentContainer{
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    padding-bottom: 0px;
+    background-color: #f2f2f282;
+}
+.userCommentContainer>img{
+    border-radius: 17px;
+    margin: 0px 3px;
+}
+.comment{
+    padding-left: 8px;
+    border-bottom: 0.5px solid #bcbcbc;
+    padding-bottom: 10px;
+}
+.commentInfo{
+    display: flex;
+    padding-bottom: 4px;
+}
+.praise{
+    color: #999;
+}
+.praise>i{
+    font-size: 16px;
+}
+.replied{
+    background: #fff;
+    padding: 8px;
+    color: #908d8d;
+    border: 1px #ccc solid;
+}

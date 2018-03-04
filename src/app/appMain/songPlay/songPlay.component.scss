@@ -1,0 +1,183 @@
+.songPlayContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+$topBarH: 50px;
+.topBar {
+  height: $topBarH;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+.content {
+  text-align: center;
+  position: relative;
+}
+$discW: 300px;
+.content > .discState {
+  position: absolute;
+  width:100%;
+  margin: auto;
+  padding-top: 55px;
+  width: 100%;
+    height: 100%;
+}
+.needle {
+  position: absolute;
+  width: 100px;
+  height: 140px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/needle.png);
+  top: 0px;
+  left: 50%;
+  transform-origin: 14px 0;
+  z-index: 1;
+  transition: transform 0.5s ease-out;
+}
+.turn{
+  transform: rotate(-20deg);
+}
+.artistImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: $discW;
+  background-size: $discW;
+  background-image: url(../../../assets/disc_2.png);
+   animation: twirl 24s linear infinite;
+   position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-property: left;
+    transition-timing-function: ease-out;
+}
+// .prevImg{
+//   left: -100%;
+//   background: white;
+// }
+// .activeImg{
+//   background: red;
+// }
+// .nextImg{
+//   left: 100%;
+//   background: blue;
+// }
+@keyframes twirl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes twirl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imgContainer{
+  height: 350px;
+}
+.artistImg > img {
+  width: 190px;
+  border-radius: 95px;
+}
+.bottomBar {
+}
+.options {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0px 55px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.controls {
+  display: flex;
+  height: 116px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+.controls a > i {
+  font-size: 40px;
+}
+.lyricState{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lyricPanel{
+  width: 70%;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+}
+.lyricPanel>div{
+  transition: all 0.1s;
+}
+.timeLine{
+  width: 100%;
+  height: 40px;
+  background: wheat;
+  z-index: 1;
+  display: flex;
+    align-items: center;
+}
+.line{
+  flex-grow: 1;
+  height: 1px;
+  background: red;
+}
+.timer{
+  padding: 0px 8px;
+}
+.font70 {
+  font-size: 70px !important;
+}
+.bgMask {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  
+  transform: scale(1.5);
+  overflow: hidden;
+}
+.bgMask::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.bgMask>img{
+  filter: blur(100px);
+}
+.maxW70{
+  max-width: 70vw;
+}

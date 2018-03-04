@@ -1,0 +1,12 @@
+<div class="relative">
+    <div routerLink="../../localMusicDetail" class="userList waves-effect">
+      <i class="material-icons folderIcon">folder_open</i>
+      <div class="userListDetail">
+        <p>{{folder.name}}</p>
+        <p>{{folder.songNum}}首 {{folder.path}}</p>
+      </div>
+    </div>
+    <a (click)="openDialog()" class="absolutEnd btn-floating btn-flat waves-effect">
+      <i class="material-icons">more_vert</i>
+    </a>
+  </div>

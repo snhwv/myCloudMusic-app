@@ -1,0 +1,69 @@
+.manageSheetContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1;
+  overflow: scroll;
+  background: #e7e4e4ad;
+}
+.resizeBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+}
+$iconSize: 25px;
+.deleteIcon {
+  font-size: $iconSize;
+  width: $iconSize;
+  height: $iconSize;
+}
+.deleteText {
+  font-size: 0.6em;
+  color: #888;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.topBar {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  color: #fff;
+  background-color: #ed1b1a;
+  
+}
+.flex {
+  flex: 1;
+  margin-left: 15px;
+}
+.userList {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  background: #fff;
+  border-bottom: 0.5px solid #ccc;
+}
+.userListDetail {
+  flex-grow: 1;
+}
+.userListDetail > p {
+  line-height: 20px;
+  text-align: left;
+}
+.listImg {
+  margin-right: 10px;
+}
+.padR15 {
+  padding-right: 15px;
+}
+.listContainer {
+  width: 100%;
+  padding: 0px;
+}

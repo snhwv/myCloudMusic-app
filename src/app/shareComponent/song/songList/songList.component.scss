@@ -1,0 +1,18 @@
+.songsBar{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 13px 10px;
+    border-bottom: 1px #acabab solid;
+ }
+ .songsBar>div{
+    display: flex;
+    align-items: center;
+ }
+ .font20px{
+    font-size: 20px;
+}
+.marginT2{
+    margin-top: -2px;
+    margin-right: 10px;
+}

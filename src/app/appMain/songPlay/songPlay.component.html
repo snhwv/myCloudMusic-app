@@ -1,0 +1,86 @@
+<div class="songPlayContainer">
+  <span class="bgMask">
+    <img [src]="song?.al?.picUrl==null?'http://placehold.it/190':(song?.al?.picUrl+'?param=700y700')" alt="">
+  </span>
+  <div>
+    <div class="white-text topBar">
+      <a class="btn-floating btn-flat waves-effect" (click)="goBack()">
+        <i class="material-icons">arrow_back</i>
+      </a>
+      <div class="grow1">
+        <p class="ellipsis maxW70">{{song?.name}}</p>
+        <p class="ellipsis maxW70">
+          <ng-container *ngFor="let artist of song?.ar">
+            {{artist.name+' '}}
+          </ng-container>
+        </p>
+      </div>
+      <a class="btn-floating btn-flat waves-effect">
+        <i class="material-icons">more_vert</i>
+      </a>
+    </div>
+  </div>
+
+  <div class="content grow1">
+    <div (click)='changeContent()' [style.display]="disc?'none':'flex'" class="lyricState">
+      <div #lyricPanel class="lyricPanel">
+        <!-- <div #lyricPanel></div> -->
+      </div>
+      <div class="timeLine">
+        <i class="material-icons">play_arrow</i>
+        <span class="line"></span>
+        <span class="timer">
+          00:24
+        </span>
+      </div>
+    </div>
+    <div [style.display]="disc?'block':'none'" class="discState">
+      <span class="needle" [class.turn]="!palying"></span>
+      <div #imgContainer (click)='changeContent()' class="imgContainer">
+        <div #xChild class="artistImg prevImg" [style.animation-play-state]="palying?'running':'paused'">
+          <img alt="">
+        </div>
+        <div #yChild class="artistImg activeImg" [style.animation-play-state]="palying?'running':'paused'">
+          <img [src]="oldImg==null?'http://placehold.it/190':(oldImg+'?param=190y190')" alt="">
+        </div>
+        <div #zChild class="artistImg nextImg" [style.animation-play-state]="palying?'running':'paused'">
+          <img alt="">
+        </div>
+      </div>
+      <div class="options">
+        <a>
+          <i class="white-text material-icons">collections_bookmark</i>
+        </a>
+        <a [routerLink]="[ '../songComment' ]" [queryParams]="{ type: 'music',id:song.id,img:song.al.picUrl,name:song.name,artist:song.ar[0].name }">
+          <i class="white-text material-icons">message</i>
+        </a>
+        <a>
+          <i class="white-text material-icons">share</i>
+        </a>
+        <a>
+          <i class="white-text material-icons">file_download</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bottomBar">
+    <app-slider></app-slider>
+    <div class="controls">
+      <a (click)="setPlayMode()">
+        <i class="white-text material-icons">
+          {{this.playMode === "single" ? "autorenew" : this.playMode === "random" ? "transform" : "format_list_numbered"}}
+        </i>
+      </a>
+      <a (click)="changSong('prev')">
+        <i class="white-text material-icons">skip_previous</i>
+      </a>
+      <a (click)="controlBtnClicked()">
+        <i class="white-text material-icons font70">{{palying?'pause_circle_outline':'play_circle_outline'}}</i>
+      </a>
+      <a (click)="changSong('next')">
+        <i class="white-text material-icons">skip_next</i>
+      </a>
+      <app-playSongList></app-playSongList>
+    </div>
+  </div>
+</div>

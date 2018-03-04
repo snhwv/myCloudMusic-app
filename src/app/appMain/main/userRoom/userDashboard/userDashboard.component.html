@@ -1,0 +1,38 @@
+<div routerLink="../../localMusic/song" class="list waves-effect">
+  <i class="material-icons">library_music</i>
+  <div class="listDetail">
+    <span>本地音乐</span>
+    <span>(30)</span>
+  </div>
+</div>
+<div routerLink="../../recentlyPlayed" class="list waves-effect">
+  <i class="material-icons">play_circle_filled</i>
+  <div class="listDetail">
+    <span>最近播放</span>
+    <span>(100)</span>
+  </div>
+</div>
+<div routerLink="../../downloadManage/song" class="list waves-effect">
+  <i class="material-icons">file_download</i>
+  <div class="listDetail">
+    <span>下载管理</span>
+    <span>(2)</span>
+  </div>
+</div>
+<div routerLink="../../myRadioStation" class="list waves-effect">
+  <i class="material-icons">album</i>
+  <div class="listDetail">
+    <span>我的电台</span>
+    <span>(1)</span>
+  </div>
+</div>
+<div routerLink="../../myCollection/album" class="list waves-effect">
+  <i class="material-icons">favorite</i>
+  <div class="listDetail">
+    <span>我的收藏</span>
+    <span>(2)</span>
+  </div>
+</div>
+<div *ngFor="let data of playlist">
+  <app-userListContainer [data]="data"></app-userListContainer>
+</div>

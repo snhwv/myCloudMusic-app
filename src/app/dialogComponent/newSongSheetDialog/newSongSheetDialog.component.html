@@ -1,0 +1,19 @@
+<div class="newSongSheetContainer">
+  <form #songSheetForm="ngForm">
+    <h6 mat-dialog-title>新建歌单</h6>
+    <div class="input-field full-width">
+      <input #sheetName id="sheetName" name="songSheetName" 
+      [(ngModel)]="songSheetName" type="text" class="validate" required>
+      <label for="sheetName">请输入歌单名</label> 
+    </div>
+    <input type="checkbox" name="privacy" 
+    [(ngModel)]="privacy" class="filled-in" id="filled-in-box" />
+    <label for="filled-in-box">隐私歌单</label>
+
+    <span class="floatR">{{sheetName.value.length}}/40</span>
+    <mat-dialog-actions class="spaceBetween">
+      <button class="waves-effect btn-flat waves-light btn"  mat-dialog-close>取消</button>
+      <button class="waves-effect btn-flat waves-light btn" [class.disabled]="!songSheetForm.form.valid" [mat-dialog-close]="songSheetForm.value">提交</button>
+    </mat-dialog-actions>
+  </form>
+</div>

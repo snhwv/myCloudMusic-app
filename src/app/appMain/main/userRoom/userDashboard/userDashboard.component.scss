@@ -1,0 +1,23 @@
+$listH: 48px;
+.list {
+  width: 100%;
+  height: $listH;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.list>i{
+  margin: 0px 8px;
+}
+.listDetail {
+  flex-grow: 1;
+  border-bottom: 0.5px solid #ccc;
+  height: $listH;
+  line-height: $listH;
+}
+.listDetail > span:last-child {
+  font-size: 0.8em;
+  color: #a09494b8;
+}

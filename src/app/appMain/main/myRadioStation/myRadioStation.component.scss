@@ -1,0 +1,42 @@
+.localMusicContainer {
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex-grow: 1;
+    overflow: scroll;
+    background: #e7e4e4ad;
+  }
+  .topBar {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    color: #fff;
+    background-color: #ed1b1a;
+    
+  }
+  .flex {
+    flex: 1;
+    margin-left: 15px;
+  }
+  .beAnchor{
+    display: flex;
+    background: white;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 10px;
+  }
+  .micIcon{
+    font-size: 30px;
+    padding-right: 8px;
+  }
+  .title{
+      padding: 6px 0px 6px 15px;
+  }
+  .radioStationContainer{
+    padding-bottom: 30px;
+    background-color: white;
+    border-top: 1px #ccc solid;
+    margin-bottom: 15px;
+  }

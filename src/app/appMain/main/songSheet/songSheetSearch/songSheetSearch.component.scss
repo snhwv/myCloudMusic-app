@@ -1,0 +1,48 @@
+$topBarH:50px;
+.topBar{
+    height: $topBarH;
+    background: red;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.sheetContainer{
+    height: calc(100vh - $topBarH);
+    overflow: scroll;
+    padding-top: $topBarH;
+}
+.clearText{
+    position: absolute;
+    top:10px;
+    right:0px;
+}
+ .opacityMask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opacityMask>img{
+   filter: blur(100px);
+}
+.opacityMask::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}

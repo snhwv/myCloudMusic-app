@@ -1,0 +1,21 @@
+<div class="white-text topBar">
+<div class="opacityMask">
+     <img [src]="bgImg" alt="">
+  </div>
+  <a class="btn-floating btn-flat waves-effect" [style.width]="'50px'" (click)="goBack()">
+    <i class="material-icons">arrow_back</i>
+  </a>
+  <div class="input-field grow1">
+    <input placeholder="Placeholder" [(ngModel)]="value" #search id="first_name" type="text">
+    <ng-container *ngIf=search.value>
+      <a class="btn-floating btn-flat waves-effect clearText" (click)="search.value=''">
+        <i class="material-icons">clear</i>
+      </a>
+    </ng-container>
+  </div>
+</div>
+<div class="sheetContainer">
+  <ng-container *ngFor="let song of songs; let i=index">
+    <app-song (insertList)="insertList($event)" [index]="i" [song]="song"></app-song>
+  </ng-container>
+</div>

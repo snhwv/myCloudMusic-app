@@ -1,0 +1,41 @@
+.userList {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    background: #fff;
+  }
+  .userListDetail {
+    flex-grow: 1;
+  }
+  .userListDetail > p {
+    line-height: 20px;
+    text-align: left;
+  }
+  .userListDetail > p:last-child {
+    font-size: 0.8em;
+    color: #b4b0b0;
+  }
+  .listImg {
+    margin-right: 10px;
+  }
+  .relative {
+    position: relative;
+  }
+  .absolutEnd {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  .absolutEnd > i {
+    color: #999;
+  }
+  .index{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .maxW65{
+    max-width: 65vw;
+  }

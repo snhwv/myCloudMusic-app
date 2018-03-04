@@ -1,0 +1,30 @@
+<div class="userCommentContainer">
+  <img [src]="comment?.user?.avatarUrl+'?param=34y34'" alt="">
+  <div class="comment grow1">
+    <div class="commentInfo">
+      <div class="grow1">
+        <p style='font-size:14px'>{{comment?.user?.nickname}}</p>
+        <p style='font-size:10px'>{{comment?.time | date:'yyyy-MM-dd'}}</p>
+      </div>
+      <div class="praise">
+        <span style='font-size:13px'>{{comment?.likedCount}}
+        </span>
+        <i class="material-icons">thumb_up</i>
+      </div>
+    </div>
+    <ng-container *ngIf="comment?.beReplied.length===0">
+      <p>{{comment?.content}}</p>
+    </ng-container>
+    <ng-container *ngIf="comment?.beReplied.length!==0">
+      <p>回复
+        <span class="blue-text">@{{comment?.beReplied[0]?.user?.nickname}}</span>
+
+        :{{comment?.content}}</p>
+      <div class="replied">
+        <p>
+          <span class="blue-text">@{{comment?.beReplied[0]?.user?.nickname}}</span>:{{comment?.beReplied[0]?.content}}</p>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

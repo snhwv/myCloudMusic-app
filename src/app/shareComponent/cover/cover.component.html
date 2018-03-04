@@ -1,0 +1,11 @@
+<div class="cover" (click)="redirect()">
+    <div class="imgContainer">
+        <img [src]="recommend?.picUrl" alt="">
+        <span class="tr white-text" [hidden]="type!=1">
+                <i class="material-icons">headset</i>
+            {{recommend?.playCount|numTurner}}
+        </span>
+        <span class="bl white-text" [hidden]="type!=3">西瓜</span>
+    </div>
+    <p class="title ellipsis">{{recommend?.name}}</p>
+</div>

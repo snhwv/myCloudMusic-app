@@ -1,0 +1,23 @@
+<ng-container *ngIf="song">
+    <div class="relative">
+        <div routerLink="../songPlay" class="bottomBarContainer">
+            <img [src]="song?.al?.picUrl==null?'http://placehold.it/40':song?.al?.picUrl+'?param=40y40'" class="artistImg" alt="">
+            <div class="songInfo">
+                <p class="fontResize08 ellipsis MaxW50">{{song?.name}}</p>
+                <p class="fontResize05 ellipsis MaxW50">
+                    <ng-container *ngFor="let artist of song?.ar">
+                        {{artist.name+' '}}
+                    </ng-container>
+                </p>
+            </div>
+        </div>
+        <div class="absolute">
+            <button (click)="controlBtnClicked()" class="waves-effect waves-light waves-teal btn btn-flat btn-floating">
+                <i class="material-icons">{{palying?'pause_circle_outline':'play_circle_outline'}}</i>
+            </button>
+            <button class="waves-effect waves-light waves-teal btn btn-flat btn-floating">
+                <i class="material-icons">format_indent_increase</i>
+            </button>
+        </div>
+    </div>
+</ng-container>

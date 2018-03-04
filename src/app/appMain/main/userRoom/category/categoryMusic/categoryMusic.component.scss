@@ -1,0 +1,78 @@
+swiper{
+    width: 100%;
+}
+.navContainer{
+    justify-content: space-around;
+    padding: 16px 0px;
+    border-bottom: 1px #e5d5d5 solid;
+}
+.musicNav{
+    display: inline-flex;
+    background: white;
+    width: 48px;
+    height: 48px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 26px;
+    margin-bottom: 5px;
+    border: #da686c 2px solid;
+    color: #da686c;
+}
+.navContainer>li>p{
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+.recommendContainer{
+    background-color: white;
+    padding-top: 14px;
+}
+.coverContaner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    flex-wrap: wrap;
+}
+.recommendHeader{
+    border-left: 5px red solid;
+    padding-left: 5px;
+}
+
+
+// $containerSize:100%;
+.cover{
+    width: 49.5%;
+    padding-bottom: 15px;
+}
+
+.imgContainer{
+    width: 100%;
+    position: relative;
+}
+.imgContainer>img{
+    width: 100%;
+}
+.imgContainer>span{
+    position: absolute;
+    font-size: 0.8em;
+}
+$spacing:4px;
+.imgContainer>.bl{
+    bottom: $spacing;
+    left: $spacing;
+}
+.imgContainer>.tr{
+    top: $spacing;
+    right: $spacing;
+}
+.imgContainer>.tr>i{
+    font-size: 12px;
+    line-height: 18px;
+    float: left;
+}
+.title{
+    font-size: 0.9em;
+    line-height: 1.2;
+}

@@ -1,0 +1,31 @@
+.topBarContainer {
+  width: 100%;
+  height: 54px;
+  background-color: #ed1b1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  line-height: 1;
+//   color: #fff;
+}
+i{
+    outline: none;
+}
+a{
+    display: inline-block;
+    color: #fff;
+}
+.center{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.fixedTop{
+    position: fixed;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}

@@ -1,0 +1,20 @@
+<div class="localMusicContainer">
+    <div class="topBar">
+      <a class="btn-floating btn-flat waves-effect" routerLink="../userRoom/dashboard">
+        <i class="material-icons">arrow_back</i>
+      </a>
+      <span class="flex">我的收藏</span>     
+      <a class="btn btn-floating btn-flat">
+        <i class="material-icons">search</i>
+      </a>
+    </div>
+    <div class="content">
+      <ul class="my_tabs">
+        <li routerLink="album" routerLinkActive="active_link" class="my_tab">专辑</li>
+        <li routerLink="artist" routerLinkActive="active_link" class="my_tab">歌手</li>
+        <li routerLink="video" routerLinkActive="active_link" class="my_tab">视频</li>
+        <li routerLink="program" routerLinkActive="active_link" class="my_tab">专栏</li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>

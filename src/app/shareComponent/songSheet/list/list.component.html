@@ -1,0 +1,14 @@
+<div class="relative">
+    <div [routerLink]="[ '../../songSheet',list.id ]" class="userList waves-effect">
+      <span [hidden]="type!='song'">{{list.index}}</span>
+      <img [src]="list.coverImgUrl" [hidden]="type!='sheet'" class="listImg" alt="">
+      <div class="userListDetail">
+        <p>{{list.name}}</p>
+        <p>{{list.trackCount+'首'+'by'+list.creator.nickname}}</p>
+      </div>
+    </div>
+    <a class="absolutEnd btn-floating btn-flat waves-effect">
+        <!-- (click)="openDialog()" -->
+      <i class="material-icons">more_vert</i>
+    </a>
+  </div>

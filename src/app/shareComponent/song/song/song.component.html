@@ -1,0 +1,18 @@
+<div class="relative">
+    <div (click)="play()" class="userList waves-effect">
+      <span class="index">{{index}}</span>
+      <div class="userListDetail">
+        <p class="ellipsis maxW65">{{song?.name}}</p>
+        <p class="ellipsis maxW65">
+          <ng-container *ngFor="let artist of song?.ar">
+            {{artist?.name+' '}}
+          </ng-container>
+          {{'-'+song?.al?.name}}
+          
+        </p>
+      </div>
+    </div>
+    <a (click)="openDialog()" class="absolutEnd btn-floating btn-flat waves-effect">
+      <i class="material-icons">more_vert</i>
+    </a>
+  </div>

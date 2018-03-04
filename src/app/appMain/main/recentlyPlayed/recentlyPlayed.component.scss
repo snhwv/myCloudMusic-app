@@ -1,0 +1,22 @@
+.localMusicContainer {
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex-grow: 1;
+    overflow: scroll;
+    background: #e7e4e4ad;
+  }
+  .topBar {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    color: #fff;
+    background-color: #ed1b1a;
+    
+  }
+  .flex {
+    flex: 1;
+    margin-left: 15px;
+  }

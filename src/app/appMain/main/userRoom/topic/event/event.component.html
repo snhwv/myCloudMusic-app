@@ -1,0 +1,51 @@
+<div class="eventContainer">
+  <img [src]="_event?.user?.avatarUrl+'?param=34y34'" alt="">
+  <div class="grow1">
+    <div class="userInfo">
+      <div>
+        <p>{{_event?.user?.nickname}} {{type}}</p>
+        <p>{{_event?.showTime | date:'yyyy-MM-dd'}}</p>
+      </div>
+      <span>+关注</span>
+    </div>
+    <p>{{event_json?.msg}}</p>
+
+    <div class="picContainer">
+      <ng-container *ngFor="let pic of _event?.pics">
+        <img [src]="pic?.squareUrl" alt="">
+      </ng-container>
+    </div>
+    <div [ngSwitch]="_event?.type">
+      <ng-container *ngSwitchCase="39">
+        <ng-container *ngIf="videoUrl">
+          <video controls [style.width]="'100%'" [src]="videoUrl"></video>
+        </ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="18">
+        <div class="userList waves-effect" (click)="play()">
+          <img [src]="event_json?.song?.al?.picUrl+'?param=40y40'" class="listImg" alt="">
+          <div class="userListDetail">
+            <p>{{event_json?.song?.name}}</p>
+            <p>
+              <ng-container *ngFor="let artist of event_json?.song?.artists">
+                {{artist?.name+' '}}
+              </ng-container>
+            </p>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngSwitchCase="36">resource</ng-container>
+      <ng-container *ngSwitchCase="22">
+        <!-- <app-event [_event]="event_json"></app-event> -->
+      </ng-container>
+    </div>
+    <p>——{{_event?.rcmdInfo?.reason}}</p>
+    <div class="flex">
+      <span>1</span>
+      <span>2</span>
+      <span>分享</span>
+      <span class="grow1"></span>
+      <span>4</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="topBar white-text">
+  <a class="btn-floating btn-flat waves-effect" (click)="goBack()">
+    <i class="material-icons">arrow_back</i>
+  </a>
+  <span class="grow1">
+    评论({{comments?.total}})
+  </span>
+</div>
+<div (click)='play()' class="userList waves-effect">
+  <img [src]="data?.img+'?param=60y60'" class="listImg" alt="">
+  <div class="userListDetail">
+    <p>{{data?.name}}</p>
+    <p>{{data?.artist}}</p>
+  </div>
+  <a class="btn-floating btn-flat waves-effect">
+    <i class="material-icons reColor">more_vert</i>
+  </a>
+</div>
+<ng-container *ngIf="comments?.hotComments">
+  <div>
+    <p class="reBg">精彩评论</p>
+    <ng-container *ngFor="let comment of comments?.hotComments">
+      <app-userComment [comment]='comment'></app-userComment>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-container *ngIf="comments?.comments">
+  <div>
+    <p class="reBg">最新评论</p>
+    <ng-container *ngFor="let comment of comments?.comments">
+      <app-userComment [comment]='comment'></app-userComment>
+    </ng-container>
+  </div>
+</ng-container>

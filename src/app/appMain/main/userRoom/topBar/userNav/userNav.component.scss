@@ -1,0 +1,41 @@
+.userNavContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.userNavContainer>.content{
+    flex-grow: 1;
+    overflow: scroll;
+}
+.userNavContainer>.bottomBar{
+    width: 100%;
+    height: 50px;
+    border-top: 1px #ccc solid;
+    display: flex;
+   
+}
+.userNavContainer>.bottomBar>a>i{
+    margin-right: 4px;
+}
+.inline-block{
+    display: inline-block;
+}
+.nameContainer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    height: 48px;
+    align-items: center;
+}
+.re{
+    border-bottom: 5px #ccc solid;
+}
+.re>li>a{
+    padding: 0px 10px;
+}
+.re>li>a>i{
+    margin-right: 10px;
+}

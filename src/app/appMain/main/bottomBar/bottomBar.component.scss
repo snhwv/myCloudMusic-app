@@ -1,0 +1,32 @@
+.relative{
+    position: relative;
+    width: 100%;
+}
+.absolute{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.bottomBarContainer{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    background: #8BC34A;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.artistImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.songInfo{
+    flex: 1;
+}
+.fontResize08{
+    font-size: 0.8em;
+}
+.fontResize05{
+    font-size: 0.5em;
+}

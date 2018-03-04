@@ -1,0 +1,30 @@
+.musicSliderContainer {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.musicSliderContainer > .left_time {
+  padding-right: 10px;
+}
+.musicSliderContainer > .right_time {
+  padding-left: 10px;
+  color: #d3c9c9;
+}
+.sliderLineContainer {
+  height: 2px;
+  width: 265px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.sliderLine {
+  height: 2px;
+  background: #0089ec;
+}
+.slider {
+  width: 10px;
+  height: 10px;
+  background-color: #26a69a;
+  border-radius: 5px;
+}

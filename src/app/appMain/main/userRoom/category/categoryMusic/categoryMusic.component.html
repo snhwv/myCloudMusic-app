@@ -1,0 +1,96 @@
+<swiper [config]="config">
+  <div class="swiper-wrapper">
+    <ng-container *ngFor="let banner of banners">
+      <img class="swiper-slide" [src]="banner?.pic+'?param=375x375'" alt="">
+    </ng-container>
+  </div>
+  <div class="swiper-pagination"></div>
+</swiper>
+<div class="flex navContainer">
+  <li>
+    <span class="musicNav">
+      <i class="material-icons">looks</i>
+    </span>
+    <p>私人FM</p>
+  </li>
+  <li>
+    <span class="musicNav">
+      <i class="material-icons">event_available</i>
+    </span>
+    <p>每日推荐</p>
+  </li>
+  <li>
+    <span class="musicNav">
+      <i class="material-icons">format_list_bulleted</i>
+    </span>
+    <p>歌单</p>
+  </li>
+  <li>
+    <span class="musicNav">
+      <i class="material-icons">assessment</i>
+    </span>
+    <p>排行榜</p>
+  </li>
+</div>
+
+<app-recommend [type]="1" [title]="'推荐歌单'" [recommends]="recommendSongSheet"></app-recommend>
+<div class="recommendContainer">
+  <p class="recommendHeader">独家放送></p>
+  <ng-container *ngIf="privateContent">
+    <div class="coverContaner">
+      <div class="cover">
+        <div class="imgContainer">
+          <img [src]="privateContent[1]?.picUrl" alt="">
+          <span class="tr">
+            <i class="material-icons">headset</i>
+            gg
+          </span>
+        </div>
+        <p class="title">{{privateContent[1]?.name}}</p>
+      </div>
+      <div class="cover">
+        <div class="imgContainer">
+          <img [src]="privateContent[2]?.picUrl" alt="">
+          <span class="tr">
+            <i class="material-icons">headset</i>
+            gg
+          </span>
+        </div>
+        <p class="title">{{privateContent[2]?.name}}</p>
+      </div>
+      <div class="">
+        <img class="full-width" [src]="privateContent[0]?.picUrl" alt="">
+        <p class="font09">{{privateContent[0]?.name}}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
+<app-recommend [type]="2" [title]="'最新音乐'" [recommends]="newAlbums"></app-recommend>
+<!-- <app-recommend [type]="2" [title]="'推荐MV'" [recommends]="newSongs"></app-recommend>
+<app-recommend [type]="2" [title]="'主播电台'" [recommends]="newSongs"></app-recommend> -->
+<div class="recommendContainer">
+  <p class="recommendHeader">推荐Mv></p>
+  <div class="coverContaner">
+    <ng-container *ngFor="let mv of recommendMV">
+      <div class="cover">
+        <div class="imgContainer">
+          <img [src]="mv?.picUrl" alt="">
+          <span class="tr">
+            <i class="material-icons">headset</i>
+            {{mv?.playCount|numTurner}}
+          </span>
+        </div>
+        <p class="title ellipsis">{{mv?.name}}</p>
+        <p class="title grey-text lighten-1 ellipsis">
+          <ng-container *ngFor="let artist of mv?.artists;let i=index;">
+            <ng-container *ngIf="i!=0">
+              /
+            </ng-container>
+            {{artist?.name }}
+          </ng-container>
+        </p>
+      </div>
+    </ng-container>
+  </div>
+</div>
+<app-recommend [type]="3" [title]="'主播电台'" [recommends]="recommendStation"></app-recommend>

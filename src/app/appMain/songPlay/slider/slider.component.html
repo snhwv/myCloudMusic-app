@@ -1,0 +1,8 @@
+<div class="musicSliderContainer">
+    <span class="left_time white-text">{{playedTime|musicTime}}</span>
+  <div #sliderLineContainer class="sliderLineContainer">
+    <span #sliderLine class="sliderLine" [style.width]="(playedTime*totalWidth)/totalTime+'px'"></span>
+    <span #slider class="slider"></span>
+  </div>
+  <span class="right_time">{{totalTime|musicTime}}</span>
+</div>

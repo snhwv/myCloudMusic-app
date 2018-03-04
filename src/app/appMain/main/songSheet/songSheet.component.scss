@@ -1,0 +1,143 @@
+$topBarH:50px;
+.topBar{
+    height: $topBarH;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.sheetContainer{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+.sheetInfo{
+    padding-top: 50px;
+    padding-bottom: 5px;
+    position:relative;
+    overflow:hidden;
+}
+.sheetImg{
+    margin: 0px 20px;
+    float: left;
+    width: 135px;
+    height: 135px;
+    position: relative;
+}
+.sheetImg>img{
+    width: 135px;
+    height: 135px;
+}
+.playCount{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.playCount>i{
+    float: left;
+    font-size: 15px;
+    line-height: 21px;
+}
+.info{
+    float: left;
+    padding-top: 20px;
+}
+.info>p:first-child{
+    margin-bottom: 10px;
+}
+.options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.options>div{
+    width: 30px;
+    text-align: center;
+}
+.options>div>i{
+   font-size: 25px;
+}
+.options>div>span{
+    font-size: 0.9em;
+ }
+ .topBar>i{
+     padding-right: 10px;
+ }
+ .creatorInfo{
+     display: flex;
+     align-items: center;
+     padding-top: 15px;
+ }
+ .creatorInfo>div{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 6px;
+ }
+ .more_item{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-right: 20px;
+ }
+ .more_item>i{
+    font-size: 17px;
+     margin: 0px 11px;
+ }
+ .opacityMask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opacityMask>img{
+   filter: blur(100px);
+}
+.opacityMask::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.bgMask {
+    position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+      height: 250px;
+  z-index: -1;
+  transform: scale(1.5);
+  overflow: hidden;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgMask::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.bgMask>img{
+  filter: blur(100px);
+}

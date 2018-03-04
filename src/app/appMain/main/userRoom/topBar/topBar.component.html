@@ -1,0 +1,25 @@
+
+<mz-sidenav
+[id]="'sidenav-demo'"
+[collapseButtonId]="'sidenav_btn'">
+<app-userNav></app-userNav>
+</mz-sidenav>
+<div class="fixedTop topBarContainer">
+  <a id="sidenav_btn" class="button-collapse">
+    <i class="material-icons">menu</i>
+  </a>
+  <div class="center">
+    <a>
+      <i class="material-icons" routerLink="dashboard">music_note</i>
+    </a>
+    <a>
+      <i class="material-icons" routerLink="category">queue_music</i>
+    </a>
+    <a>
+      <i class="material-icons" routerLink="topics">people</i>
+    </a>
+  </div>
+  <a>
+    <i class="material-icons">search</i>
+  </a>
+</div>

@@ -1,0 +1,38 @@
+<div class="localMusicContainer">
+  <div class="topBar">
+    <a class="btn-floating btn-flat waves-effect" routerLink="../userRoom/dashboard">
+      <i class="material-icons">arrow_back</i>
+    </a>
+    <span class="flex">本地音乐</span>
+    <a class="btn btn-floating btn-flat">
+      <i class="material-icons">search</i>
+    </a>
+    <a class="btn btn-floating btn-flat">
+      <i class="material-icons">more_vert</i>
+    </a>
+  </div>
+  <div class="content">
+    <ul class="my_tabs">
+      <li routerLink="song" routerLinkActive="active_link" class="my_tab">单曲</li>
+      <li routerLink="artist" routerLinkActive="active_link" class="my_tab">歌手</li>
+      <li routerLink="album" routerLinkActive="active_link" class="my_tab">专辑</li>
+      <li routerLink="folder" routerLinkActive="active_link" class="my_tab">文件夹</li>
+    </ul>
+    <router-outlet></router-outlet>
+    <!-- <mz-tab [fixedTabWidth]="'true'">
+      <mz-tab-item [active]="'true'" [label]="'单曲'">
+        
+      </mz-tab-item>
+      <mz-tab-item [label]="'歌手'">
+       
+      </mz-tab-item>
+      <mz-tab-item [label]="'专辑'">
+       
+      </mz-tab-item>
+      <mz-tab-item [label]="'文件夹'">
+            
+      </mz-tab-item>
+    </mz-tab> -->
+
+  </div>
+</div>

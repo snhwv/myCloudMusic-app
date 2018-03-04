@@ -1,0 +1,40 @@
+.localMusicContainer {
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex-grow: 1;
+    overflow: scroll;
+    background: #e7e4e4ad;
+  }
+  .topBar {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    color: #fff;
+    background-color: #ed1b1a;
+    
+  }
+  .flex {
+    flex: 1;
+    margin-left: 15px;
+  }
+  $tabH:40px;
+  .my_tabs{
+    display: flex;
+    justify-content: space-around;
+    height: $tabH;
+    align-items: center;
+  }
+  .my_tabs>.my_tab{
+    height: $tabH;
+    line-height: $tabH;
+    flex-grow: 1;
+    text-align: center;
+    outline: none;
+  }
+  .active_link{
+    border-bottom: 1px red solid;
+  }
+  

@@ -1,0 +1,12 @@
+<div class="relative">
+    <div routerLink="../../localMusicDetail" class="userList waves-effect">
+      <img [src]="artist.listImg" class="listImg" alt="">
+      <div class="userListDetail">
+        <p>{{artist.name}}</p>
+        <p>{{artist.songNum}}首</p>
+      </div>
+    </div>
+    <a (click)="openDialog()" class="absolutEnd btn-floating btn-flat waves-effect">
+      <i class="material-icons">more_vert</i>
+    </a>
+  </div>

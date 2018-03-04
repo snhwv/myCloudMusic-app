@@ -1,0 +1,23 @@
+.mainContainer{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.mainPanel{
+    flex-grow: 1;
+    overflow: scroll;
+}
+.innerH{
+    height: calc(100vh - 50px);
+}
+.innerContainer{
+    padding-bottom: 54px;
+}
+.bottomBarContainer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}

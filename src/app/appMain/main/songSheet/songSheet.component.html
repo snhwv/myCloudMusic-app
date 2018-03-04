@@ -1,0 +1,82 @@
+<div class="white-text topBar">
+  <div [style.opacity]="topBarOpacity" class="opacityMask">
+    <img [src]="data?.playlist?.coverImgUrl==null?'':data?.playlist?.coverImgUrl+'?param=600y400'" alt="">
+  </div>
+  <a class="btn-floating btn-flat waves-effect" (click)="goBack()">
+    <i class="material-icons">arrow_back</i>
+  </a>
+  <span class="grow1">歌单</span>
+  <a [routerLink]="[ '../../songSheetSearch']" [queryParams]="{ bgImg: data?.playlist?.coverImgUrl==null?'':data?.playlist?.coverImgUrl+'?param=600y400' }"
+    class="btn-floating btn-flat waves-effect">
+    <i class="material-icons">search</i>
+  </a>
+  <!-- <i class="material-icons">search</i> -->
+  <mz-dropdown [id]="'dropdown-content'" [dropdownButtonId]="'btn-dropdown-demo'" [constrainWidth]="false" [align]="'right'">
+    <mz-dropdown-item>
+      <div class="more_item">
+        <i class="material-icons">format_line_spacing</i>选择歌曲排序</div>
+    </mz-dropdown-item>
+    <mz-dropdown-item>
+      <div class="more_item">
+        <i class="material-icons">delete</i>清空下载文件</div>
+    </mz-dropdown-item>
+    <mz-dropdown-item>
+      <div class="more_item">
+        <i class="material-icons">report_problem</i>举报</div>
+    </mz-dropdown-item>
+  </mz-dropdown>
+  <a id="btn-dropdown-demo" class="btn-floating btn-flat waves-effect">
+    <i class="material-icons">more_vert</i>
+  </a>
+  <!-- <div class="opacityMask" [style.background-color]="bgColor" [style.opacity]="topBarOpacity"></div> -->
+</div>
+
+<div #sheetContainer class="sheetContainer">
+  <div #info class="white-text sheetInfo">
+    <span class="bgMask">
+      <img [src]="data?.playlist?.coverImgUrl==null?'':data?.playlist?.coverImgUrl+'?param=400y400'" alt="">
+    </span>
+    <div class="overHidden">
+      <div class="sheetImg">
+        <img [src]="data?.playlist?.coverImgUrl==null?'':data?.playlist?.coverImgUrl+'?param=135y135'" alt="">
+        <span class="playCount white-text">
+          <i class="material-icons">headset</i>
+          {{data?.playlist?.playCount|numTurner}}
+        </span>
+      </div>
+
+      <div class="info">
+        <p class="ellipsis W45">{{data?.playlist?.name}}</p>
+        <div class="creatorInfo">
+          <div>
+            <img [src]="data?.playlist?.coverImgUrl==null?'':data?.playlist?.creator?.avatarUrl+'?param=30y30'" alt="">
+          </div>
+          <span class="font09">{{data?.playlist?.creator?.nickname}}></span>
+        </div>
+      </div>
+    </div>
+    <div class="options">
+      <div>
+        <i class="material-icons">collections_bookmark</i>
+        <span>收藏</span>
+      </div>
+      <div [routerLink]="[ '../../../songComment' ]"   [queryParams]="{ type: 'playlist',id:data?.playlist?.id,
+      img:data?.playlist?.coverImgUrl,name:data?.playlist?.name,artist:data?.playlist?.creator?.nickname }"
+    >
+        <i class="material-icons">message</i>
+        <span>评论</span>
+      </div>
+      <div>
+        <i class="material-icons">share</i>
+        <span>分享</span>
+      </div>
+      <div>
+        <i class="material-icons">file_download</i>
+        <span>下载</span>
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="loaded">
+    <app-songList [songList]="data?.playlist?.tracks"></app-songList>
+  </ng-container>
+</div>

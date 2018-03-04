@@ -1,0 +1,30 @@
+<div class="manageSheetContainer">
+  <div class="topBar">
+    <!-- <button mat-icon-button (click)="goBack()" color="primary">
+          <mat-icon>arrow_back</mat-icon>
+        </button> -->
+    <a class="btn-floating btn-flat waves-effect" (click)="goBack()">
+      <i class="material-icons">arrow_back</i>
+    </a>
+    <span class="flex">已选择0项</span>
+    <button class="btn white_text btn-flat">全选</button>
+  </div>
+  <div class="content">
+    <div class="userList waves-effect">
+      <input type="checkbox" id="checkbox" class="filled-in padR15" />
+      <label for="checkbox"></label>
+      <img src="http://placehold.it/50x50" class="listImg" alt="">
+      <div class="userListDetail">
+        <p>论如何优雅地扭动身体</p>
+        <p>26首 by 张不困</p>
+      </div>
+      <i class="material-icons">menu</i>
+    </div>
+  </div>
+  <div class="bottomBar">
+    <button class="resizeBtn btn-flat waves-effect">
+      <i class="material-icons deleteIcon">delete</i>
+      <p class="deleteText">删除</p>
+    </button>
+  </div>
+</div>

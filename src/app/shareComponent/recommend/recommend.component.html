@@ -1,0 +1,8 @@
+<div class="recommendContainer">
+    <p class="recommendHeader">{{title}}></p>
+    <div class="coverContaner">
+        <ng-container *ngFor="let recommend of recommends">
+            <app-cover [type]="type" [recommend]="recommend"></app-cover>
+          </ng-container>
+    </div>
+  </div>

@@ -1,0 +1,15 @@
+<div class="userListContainer">
+  <div class="listBar">
+    <i class="tiny material-icons" [@rotate]="state">chevron_right</i>
+    <span class="listTitle" (click)="toggle()">{{data.listTitle}}</span>
+    <a>
+        <!-- (click)="openListDialog()" -->
+      <i class="tiny material-icons">settings</i>
+    </a>
+  </div>
+  <div class="listContent" [hidden]="hidden">
+    <div *ngFor="let list of data.playList">
+      <app-list [type]="'sheet'" [list]="list"></app-list>
+    </div>
+  </div>
+</div>
