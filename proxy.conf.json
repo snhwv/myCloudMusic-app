@@ -1,0 +1,23 @@
+{
+	"/api": {
+		"target": "http://localhost:3000",
+		"secure": false,
+		"changeOrigin": true,
+		"logLevel": "debug",
+		"pathRewrite": {"^/api" : ""}
+	},
+	"/bird": {
+		"target": "http://p1.music.126.net",
+		"secure": false,
+		"changeOrigin": true,
+		"logLevel": "debug",
+		"pathRewrite": {"^/bird" : ""}
+	},
+	"/m10": {
+		"target": "http://m10.music.126.net",
+		"secure": false,
+		"changeOrigin": true,
+		"logLevel": "debug",
+		"pathRewrite": {"^/m10" : ""}
+	}
+}
