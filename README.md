@@ -1,6 +1,6 @@
 # CloudMusic
 
-仿网易云音乐安卓版。首先感谢[大神的接口](https://github.com/Binaryify/NeteaseCloudMusicApi）
+仿网易云音乐安卓版。首先感谢[大神的接口](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
 ## screenshots
 <div style="display:flex;">
