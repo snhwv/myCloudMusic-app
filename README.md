@@ -1,6 +1,6 @@
 # CloudMusic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
+仿网易云音乐安卓版。
 
 ## Development server
 
