@@ -4,9 +4,9 @@
 
 ## screenshots
 <div style="display:flex;">
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" style="float:left;" width = "294" alt="screenshot"/>
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png" style="float:left;" width = "294" alt="screenshot"/>
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png" width = "294" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "280" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png" width = "280" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png" width = "280" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215635.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215746.png" width = "294" alt="screenshot"/>
