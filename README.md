@@ -4,6 +4,14 @@
 
 ## screenshots
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ 
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png)
