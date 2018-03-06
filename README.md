@@ -3,9 +3,9 @@
 仿网易云音乐安卓版。
 
 ## screenshots
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
