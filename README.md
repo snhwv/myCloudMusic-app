@@ -3,8 +3,8 @@
 仿网易云音乐安卓版。
 
 ## screenshots
-
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png =250x250)
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" width = "300" height = "200" alt="screenshot"/>
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png)
