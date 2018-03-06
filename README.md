@@ -1,6 +1,6 @@
 # CloudMusic
 
-仿网易云音乐安卓版。
+仿网易云音乐安卓版。首先感谢[大神的接口](https://github.com/Binaryify/NeteaseCloudMusicApi）
 
 ## screenshots
 <div style="display:flex;">
@@ -13,7 +13,7 @@
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png" width = "284" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png" width = "284" alt="screenshot"/>
 </div>
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+先把它放上来，但是还没有写完。
 
 ## Code scaffolding
 
