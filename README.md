@@ -5,6 +5,13 @@
 ## screenshots
 
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215635.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215746.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
