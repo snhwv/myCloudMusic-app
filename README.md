@@ -4,7 +4,7 @@
 
 ## screenshots
 
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png = 250x250)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png =250x250)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png)
 ![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png)
