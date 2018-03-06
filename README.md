@@ -4,7 +4,7 @@
 
 ## screenshots
 
-![screenshot](https://github.com/snhwv/myCloudMusic-app/tree/master/screenshot/20180306215157.png)
+![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
