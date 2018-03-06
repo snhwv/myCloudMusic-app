@@ -3,6 +3,7 @@
 仿网易云音乐安卓版。
 
 ## screenshots
+<div style="display:flex;">
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" style="float:left;" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png" style="float:left;" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png" width = "294" alt="screenshot"/>
@@ -11,7 +12,7 @@
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215746.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png" width = "294" alt="screenshot"/>
-
+</div>
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
