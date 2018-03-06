@@ -3,23 +3,14 @@
 仿网易云音乐安卓版。
 
 ## screenshots
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" style="float:left" width = "294" alt="screenshot"/>
- <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png" width = "294" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png" style="float:left;" width = "294" alt="screenshot"/>
+ <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png" style="float:left;" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215635.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215746.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png" width = "294" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png" width = "294" alt="screenshot"/>
- 
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215157.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215244.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215400.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215559.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215635.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215746.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png)
-![screenshot](https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
