@@ -19,7 +19,6 @@ export class CloudMusicService {
   private playlist = [];
   private userId = 477944154;
   constructor(private http: HttpClient, private http1: Http) {
-    // this.phoneLogin("17772450369", "yang20050116..");
   }
   request(method: string, url: string, data?: any): Observable<any> {
     return this.http.request(method, "/api/" + url, {
