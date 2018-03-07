@@ -13,7 +13,6 @@
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215808.png" width = "284" alt="screenshot"/>
  <img src="https://github.com/snhwv/myCloudMusic-app/raw/master/screenshot/20180306215851.png" width = "284" alt="screenshot"/>
 </div>
-先把它放上来，但是还没有写完。
 
 ## Code scaffolding
 
